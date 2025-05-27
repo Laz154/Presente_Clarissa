@@ -1,0 +1,24 @@
+body {
+    background-color: #000; /* Fundo escuro para destacar o brilho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.button button {
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+    transition: all 0.3s ease;
+}
+
+.button button:hover {
+    box-shadow: 0 0 20px white, 0 0 30px white;
+}
