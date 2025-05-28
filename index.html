@@ -8,20 +8,15 @@
 </head>
 <body>
    <div class="player-container">
-    <img class="cover" src="tools/capa-oceano.jpg" alt="Capa do álbum">
-    <div class="song-title">Oceano - Djavan</div>
-    
-    <div class="controls">
-      <button id="playPauseBtn" onclick="musicaPlayer()">▶</button>
+        <img class="cover" src="tools/capa-oceano.webp" alt="Capa do álbum">
+        <div class="song-title">Oceano - Djavan</div>
+        <div class="audio-controls">
+            <audio controls autoplay loop>
+                <source src="tools/oceano-djavan.mp3" type="audio/mp3">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </div>
     </div>
-
-    <div class="progress">
-      <div class="progress-bar" id="progressBar"></div>
-    </div>
-
-    <audio id="audio" src="tools/oceano-djavan.mp3" >
-    </audio>
-  </div>
 
   <script src="main.js"></script>
 

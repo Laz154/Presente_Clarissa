@@ -11,40 +11,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-function musicaPlayer(){
-    const audio = document.getElementById('audio');
-    const playPauseBtn = document.getElementById('playPauseBtn');
-    const progressBar = document.getElementById('progressBar');
 
-    // Tocar automaticamente
-    audio.play();
-
-    function updatePlayButton() {
-    if (audio.paused) {
-      playPauseBtn.textContent = '▶';
-    } else {
-      playPauseBtn.textContent = '⏸';
-    }
-  }
-
-    playPauseBtn.addEventListener('click', () => {
-      if (isPlaying) {
-        audio.pause();
-        playPauseBtn.textContent = '▶';
-      } else {
-        audio.play();
-        playPauseBtn.textContent = '⏸';
-      }
-      updatePlayButton();
-    });
-
-    audio.addEventListener('play', updatePlayButton);
-    audio.addEventListener('pause', updatePlayButton);
-
-    // Atualizar barra de progresso
-    audio.addEventListener('timeupdate', () => {
-      const progress = (audio.currentTime / audio.duration) * 100;
-      progressBar.style.width = progress + '%';
-    });
-}
     
