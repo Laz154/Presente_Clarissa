@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+   <div class="player-container">
+    <img class="cover" src="tools/capa-oceano.jpg" alt="Capa do álbum">
+    <div class="song-title">Oceano - Djavan</div>
     
+    <div class="controls">
+      <button id="playPauseBtn" onclick="musicaPlayer()">▶</button>
+    </div>
+
+    <div class="progress">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <audio id="audio" src="tools/oceano-djavan.mp3" >
+    </audio>
+  </div>
+
+  <script src="main.js"></script>
+
 </body>
 </html>
