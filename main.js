@@ -44,3 +44,24 @@ window.addEventListener("load", () => {
   }
 });
     
+// MARCAÇÃO DO TEMPO DE NAMORO
+setInterval(() => {
+  const agora = new Date();
+  const dataAlvo = new Date(2024, 9, 7, 0, 0, 0); // 07/09/2024
+  let p1 = document.getElementById("tag-p1")
+
+  const diferenca = agora - dataAlvo; //diferença em milissegundos
+
+  const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+  const horas = Math.floor((diferenca / (1000 * 60 * 60)) % 24);
+  const minutos = Math.floor((diferenca / (1000 * 60)) % 60);
+  const segundos = Math.floor((diferenca / 1000) % 60);
+
+  p1.textContent = `Temos ${dias} dias, ${horas}h, ${minutos}m e ${segundos}s de namoro`;
+}, 1000);
+
+
+
+
+
+
