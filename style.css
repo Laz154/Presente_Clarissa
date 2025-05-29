@@ -105,9 +105,9 @@ audio::-webkit-media-controls-panel {
 /* CARRROSSEL DE FOTOS */
 
 .carousel-container {
-  margin-top: 60px;
-  width: 80vw;
-  height: 60vh;
+  margin-top: 90px;
+  width: 90vw;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
