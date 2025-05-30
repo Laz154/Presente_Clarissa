@@ -1,11 +1,12 @@
-body {
-    background-color: #000; /* Fundo escuro para destacar o brilho */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+.body-telaInicial {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
+
 
 .button button {
     background-color: transparent;
@@ -25,16 +26,15 @@ body {
 
 /* PAGINA INDEX */
 
-body {
-      background-color: #121212;
-      color: white;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
+.body-index {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column; /* empilhamento vertical */
+  align-items: center;
+  margin: 0;
+}
 
 .player-container {
     position: fixed;
@@ -175,3 +175,31 @@ audio::-webkit-media-controls-panel {
     opacity: 0;
   }
 }
+
+/* TEXTO CONTAGEM */
+
+.contador-container {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  } to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MENSAGEM */
+
+.mensagem-container{
+  text-align: center;
+  margin: 16px;
+}
+

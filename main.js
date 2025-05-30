@@ -48,7 +48,7 @@ window.addEventListener("load", () => {
 setInterval(() => {
   const agora = new Date();
   const dataAlvo = new Date(2024, 9, 7, 0, 0, 0); // 07/09/2024
-  let p1 = document.getElementById("tag-p1")
+  let contagem_p = document.getElementById("contagem")
 
   const diferenca = agora - dataAlvo; //diferença em milissegundos
 
@@ -57,7 +57,7 @@ setInterval(() => {
   const minutos = Math.floor((diferenca / (1000 * 60)) % 60);
   const segundos = Math.floor((diferenca / 1000) % 60);
 
-  p1.textContent = `Temos ${dias} dias, ${horas}h, ${minutos}m e ${segundos}s de namoro`;
+  contagem_p.textContent = `${dias} dias, ${horas}h, ${minutos}m e ${segundos}s`;
 }, 1000);
 
 
